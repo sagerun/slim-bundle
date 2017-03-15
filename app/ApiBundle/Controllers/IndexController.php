@@ -9,12 +9,20 @@ namespace  App\ApiBundle\Controllers;
 
 use \Psr\Http\Message\ServerRequestInterface as  Request;
 use \Psr\Http\Message\ResponseInterface as  Response;
-
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
 class IndexController extends   Controller{
  
   
 
 public function  index(Request $request,Response $response){
+dd($this->logger);
+//    $log = new Logger('name');
+//    $log->pushHandler(new StreamHandler('path/to/your.log', Logger::WARNING));
+//
+//// 添加日志记录
+//    $log->addWarning('Foo');
+//    $log->addError('Bar');
 
     $client = new \Predis\Client();
     $data= $this->db->table("user")->select()->limit(10)->get();

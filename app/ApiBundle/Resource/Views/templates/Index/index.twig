@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+
+<body style="width:100%">
+api首页
+{% for i in data  %}
+    <p style="width:80%;"><a>{{ i.name }}</a><br/>
+        {{ i.desc | raw }}   </p>
+{% endfor %}
+
+</body>
+</html>

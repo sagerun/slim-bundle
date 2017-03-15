@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+
+<body style="width:100%">
+ <form method="POST" action="{{ path_for("alipayWapPayment") }}">
+     <ul>
+         <li>支付中心  --wap手机版</li>
+         <li>商品标题:<input type="text" name="subtitle" value="测试商品"/></li>
+         <li>支付金额：<input type="text" name="amount" value="0.01"/></li>
+         <li><input type="submit" value="提交支付"/></li>
+     </ul>
+ </form>
+</body>
+</html>

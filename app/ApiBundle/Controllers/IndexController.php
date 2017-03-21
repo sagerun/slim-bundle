@@ -33,9 +33,6 @@ dump($value);exit;
     return    $response->withJson($data);
     return $this->view->render($response, 'Index/index.twig',[ ]);
 
-
-
-
 }
     
 }

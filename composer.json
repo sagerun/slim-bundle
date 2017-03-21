@@ -20,7 +20,8 @@
         "phpoffice/phpexcel":"1.8.*",
         "lokielse/omnipay-alipay":"2.0.*",
         "lokielse/omnipay-wechatpay":"^1.0",
-        "league/oauth2-server":"5.1.3"
+        "league/oauth2-server":"5.1.3",
+        "codeguy/upload":"1.3.*"
     },
     "authors": [
         {

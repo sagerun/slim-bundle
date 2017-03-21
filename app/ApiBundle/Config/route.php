@@ -16,6 +16,8 @@ $app->group('/api',function () use($app){
   $this->get('',$con.'IndexController:index');
 
   $this->get('/',$con.'IndexController:index');
+  $this->post('/uploadImg',$con.'UploadsController:uploadImg');
+  $this->post('/MonitorInfo',$con.'UploadsController:MonitorInfo');
 });
 
 

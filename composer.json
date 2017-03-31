@@ -1,5 +1,5 @@
 {
-    "name": "havenshen/slim-bundle",
+    "name": "sagerun/slim-bundle",
     "description": "Slim Framework 3 http",
     "type": "project",
     "keywords": ["slim", "slim 3", "slim-bundle", "authentication"],
